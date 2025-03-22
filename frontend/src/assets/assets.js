@@ -49,6 +49,64 @@ export const jobsData = [
     location: "onsite",
     level: "1-3 yr Exp",
     image: amazon,
+    salary: "12LPA",
+    jobtype: "full-time",
+    description: `
+        <ol>
+         <li>A user-friendly interface lets you browse stunning photos and videos</li>
+         <li>Filter destinations based on interests and travel style, and create personalized</li>
+        </o/>`,
+  },
+  {
+    _id: 2,
+    title: "Node JS Developer",
+    location: "onsite",
+    level: "1-3 yr Exp",
+    image: tesla,
+    salary: "12LPA",
+    jobtype: "part-time",
+    description: `
+        <ol>
+         <li>A user-friendly interface lets you browse stunning photos and videos</li>
+         <li>Filter destinations based on interests and travel style, and create personalized</li>
+        </o/>`,
+  },
+  {
+    _id: 3,
+    title: "UX/UI Intern",
+    location: "chennai",
+    level: "1-3 yr Exp",
+    image: swigy,
+    salary: "12LPA",
+    jobtype: "contract",
+    description: `
+        <ol>
+         <li>A user-friendly interface lets you browse stunning photos and videos</li>
+         <li>Filter destinations based on interests and travel style, and create personalized</li>
+        </o/>`,
+  },
+  {
+    _id: 1,
+    title: "Full Stack Developer",
+    location: "onsite",
+    level: "1-3 yr Exp",
+    image: amazon,
+    salary: "12LPA",
+    jobtype: "internship",
+    description: `
+        <ol>
+         <li>A user-friendly interface lets you browse stunning photos and videos</li>
+         <li>Filter destinations based on interests and travel style, and create personalized</li>
+        </o/>`,
+  },
+  {
+    _id: 1,
+    title: "Full Stack Developer",
+    location: "onsite",
+    level: "1-3 yr Exp",
+    image: amazon,
+    salary: "12LPA",
+    jobtype: "part-time",
     description: `
         <ol>
          <li>A user-friendly interface lets you browse stunning photos and videos</li>

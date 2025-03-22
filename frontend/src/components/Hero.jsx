@@ -101,12 +101,16 @@ const Hero = () => {
                 onClick={() => {
                   setDropdownVisible(!isDropdownVisible);
                 }}
+                style={{ cursor: "pointer" }}
                 alt=""
               />
               {isDropdownVisible && (
                 <div
                   className="dropdown-joblocation"
-                  style={{ display: isDropdownVisible ? "flex" : "none" }}
+                  style={{
+                    display: isDropdownVisible ? "flex" : "none",
+                    cursor: "pointer",
+                  }}
                 >
                   <ul>
                     {jobLocations.map((el, i) => (
@@ -127,21 +131,27 @@ const Hero = () => {
               <img
                 src={assests.filterIcon}
                 onClick={() => setDropdownJob(!isDropdownJob)}
+                style={{ cursor: "pointer" }}
                 alt=""
               />
-            {isDropdownJob && (
-              <div className="dropdown-jobtype" style={{display:isDropdownJob? 'flex':'none'}}>
-                <ul>
-                  {jobType.map((el, i) => (
-                    <li key={i} onClick={handleJobTypeSelect}>
-                      {el}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+              {isDropdownJob && (
+                <div
+                  className="dropdown-jobtype"
+                  style={{
+                    display: isDropdownJob ? "flex" : "none",
+                    cursor: "pointer",
+                  }}
+                >
+                  <ul>
+                    {jobType.map((el, i) => (
+                      <li key={i} onClick={handleJobTypeSelect}>
+                        {el}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
-
           </div>
 
           <div className="range-slider">
