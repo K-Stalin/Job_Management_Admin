@@ -32,9 +32,20 @@ function timeAgo(timestamp)
     <div className="jobCard" style={{ opacity: showCreateJob ? "0.2" : null }}>
       <div className="company_logo">
         <div>
-          <img src={assests.amazon} width="105px" height="104px" alt="" />
+          <img
+            src={
+              job.companyName === "Tesla"
+                ? assests.tesla
+                : job.companyName === "amazon"
+                ? assests.amazon
+                : assests.swigy
+            }
+            width="105px"
+            height="104px"
+            alt=""
+          />
         </div>
-        <span className='timeStamp'>{timeAgo(job.createdAt)}</span>
+        <span className="timeStamp">{timeAgo(job.createdAt)}</span>
       </div>
       <h4 className="job-title">{job.title}</h4>
 

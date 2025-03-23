@@ -39,6 +39,7 @@ const { data } = await axios.get(`${backendUrl}/api/company/list-jobs`);
 
     if(data.success)
     {
+      console.log(data.jobs)
       setJobs(data.jobs)
     }
          
