@@ -44,9 +44,13 @@ const JobListing = () => {
        ) {
          return job;
        }
-       else if(isNaN(minSalary)&& isNaN(maxSalary))
-       {
-        return job;
+       else if (
+         isNaN(minSalary) &&
+         isNaN(maxSalary) &&
+         job.minSalary >= 50000 &&
+         job.maxSalary <= 80000
+       ) {
+         return job;
        }
      };
 
