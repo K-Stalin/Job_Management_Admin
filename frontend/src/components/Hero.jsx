@@ -33,7 +33,7 @@ const Hero = () => {
 
   const updateRangeProgress = () => {
     if (rangeRef.current) {
-      let minPercent = ((minValue - 10000) / (100000 - 10000)) * 100 +10;
+      let minPercent = ((minValue - 10000) / (100000 - 10000)) * 100+10;
       let maxPercent = ((maxValue - 10000) / (100000 - 10000)) * 100+9;
       rangeRef.current.style.left = `${minPercent}%`;
       rangeRef.current.style.width = `${maxPercent - minPercent}%`;

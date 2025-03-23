@@ -217,7 +217,7 @@ body {
 /* White inner dot */
 .range-slider input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none;
+  appearance:none;
   width: 20px;
   height: 20px;
   top: -8px;
@@ -536,6 +536,9 @@ body {
 .create-wrapper{
  top:70%;
 }
+.hero>div{
+  border-right: none;
+}
 }
 
 
@@ -546,8 +549,8 @@ body {
 }
 
  .hero > div {
-  margin: 10px 0;
-    width: 45%;  
+    margin: 10px 0;
+    width: 35%;  
   }
   
 .create-job__firstrow
