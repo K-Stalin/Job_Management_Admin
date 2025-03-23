@@ -15,8 +15,6 @@ body {
     
 }
 
-
-
 .container{
   max-width:1400px;
   margin:0 auto;
@@ -50,6 +48,7 @@ body {
 
 .nav-right>li{
   list-style-type:none;  
+  color: #303030;
 }
 
 .createBtn >button{
@@ -85,6 +84,7 @@ body {
   border-right: 2px solid #eaeaea;
   padding:0 10px;
   width:20%;
+  color: #686868;
 }
 
 
@@ -101,6 +101,8 @@ body {
 .jobtitle>input{
   border: none;
   width: 100%;
+  font-size: 16px;
+  font-weight: 500;
 }
 .jobtitle>input:focus{
   outline: none;
@@ -176,6 +178,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 100%;
+  color: #222222;
 }
 
 
@@ -289,6 +292,8 @@ body {
 .job-data>div>span{
   font-size: 16px;
   font-weight: 500;
+  color: #5a5a5a;
+  
 }
 
 .applyBtn{
@@ -304,6 +309,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
+  font-family: 'Satoshi Medium', sans-serif;
 }
 
 .description{
@@ -312,6 +318,7 @@ body {
   padding-left:15px;
   margin-bottom: 10px;
    font-family: 'Satoshi Medium', sans-serif;
+   color: #5a5a5a;
 }
 .description>ol>li{
   list-style-type:disc;
@@ -333,7 +340,7 @@ body {
   padding:20px 10px;
   border-radius: 10px;
   background-color: white;
-  display: none;
+  
 }
 
 
@@ -395,6 +402,11 @@ body {
   border-radius:5px;
 }
 
+.create-job__secondrow>div>select:focus{
+  outline: none;
+}
+
+
 /* Second row end */
 
 
@@ -426,12 +438,29 @@ body {
   gap:10px;
   
 }
+.create-job__thirdrow-second>input{
+  border: none;
+  border: 1px solid black;
+}
+
+
+.create-job__thirdrow-second>input:focus{
+  outline: none;
+}
 
 .create-job__thirdrow-first>input{
   width: 92%;
   padding: 6px 5px;
   border-radius:5px;
+  border: none;
+  border: 1px solid black;
 }
+
+.create-job__thirdrow-first>input:focus{
+  outline: none;
+  
+}
+
 
 .create-job__thirdrow>div:nth-child(2)>input{
   width: 96%;
@@ -482,6 +511,7 @@ body {
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
+  color: white;
 }
 
 

@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { assests } from '../assets/assets'
+import { AppContext } from '../context/AppContext'
 
 
 const Navbar = () => {
+
+const {setShowCreateJob} = useContext(AppContext)
+
   return (
     <>
       <header>
@@ -19,7 +23,7 @@ const Navbar = () => {
                     <li>Testimonials</li>
                   </ul>
                    <div className='createBtn'>
-                     <button>Create jobs</button>
+                     <button onClick={e=>setShowCreateJob(true)}>Create jobs</button>
                    </div> 
              </div>
          </div>   

@@ -20,6 +20,8 @@ const [searchFilter,setSearchFilter] = useState({
 
 const [jobs,setJobs ] = useState([])
 
+const [showCreateJob,setShowCreateJob] = useState(false)
+
 // function to fetchJob Data
 
 const fetchJobs = async ()=>{
@@ -33,7 +35,9 @@ useEffect(()=>{
     const value = {
                searchFilter,
                setSearchFilter,
-               jobs
+               jobs,
+               showCreateJob,
+               setShowCreateJob
     }
   return (<AppContext.Provider value={value}>
           {props.children}

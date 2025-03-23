@@ -9,6 +9,8 @@ import search from "./search.svg";
 import swigy from "./swigy.svg";
 import tesla from "./tesla.svg";
 import location from "./location.svg";
+import downarrow from "./downarrow.svg";
+import rightarrow from "./rightarrow.svg";
 
 
 export const assests = {
@@ -23,6 +25,8 @@ export const assests = {
   swigy,
   tesla,
   location,
+  downarrow,
+  rightarrow
 };
 
 

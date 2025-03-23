@@ -76,7 +76,9 @@ const Hero = () => {
   }
 
   return (
-    <section className="hero-wrapper">
+    <section
+      className="hero-wrapper"
+    >
       <div className="container">
         <div className="hero">
           {/* Job Title */}
