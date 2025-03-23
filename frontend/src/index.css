@@ -76,13 +76,12 @@ body {
 .hero
 {
   display:flex;
-  justify-content: space-between;
   flex-wrap:wrap;
 }
 
 .hero>div{
   border-right: 2px solid #eaeaea;
-  padding:0 10px;
+  padding:0 30px;
   width:20%;
   color: #686868;
 }
@@ -319,6 +318,7 @@ body {
   margin-bottom: 10px;
    font-family: 'Satoshi Medium', sans-serif;
    color: #5a5a5a;
+   height:70px;
 }
 .description>ol>li{
   list-style-type:disc;
@@ -337,7 +337,7 @@ body {
   min-width:300px;
   width:40%;
   z-index:1000;
-  padding:20px 10px;
+  padding:20px 25px;
   border-radius: 10px;
   background-color: white;
   
@@ -482,6 +482,7 @@ body {
 .create-job__fourthrow>textarea{
   height:120px;
   border: 1px solid black;
+  padding:10px;
 }
 
 .create-job__fourthrow>textarea:focus{

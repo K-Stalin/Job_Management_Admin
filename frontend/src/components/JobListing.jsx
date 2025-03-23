@@ -6,15 +6,11 @@ const JobListing = () => {
 
     const { searchFilter,jobs } = useContext(AppContext)
     
-let rangeSalary = searchFilter.salary.split("-")
- 
- parseInt(rangeSalary[0]);
- parseInt(rangeSalary[1]);
- 
 
 
 
     const [filterdJob,setFilteredJobs ] = useState(jobs)
+
 
     useEffect(()=>{
         
@@ -25,9 +21,41 @@ let rangeSalary = searchFilter.salary.split("-")
        
        const matchesJobType = (job) => searchFilter.jobType === "" || job.jobtype.toLowerCase().includes(searchFilter.jobType.toLowerCase());
 
-       const newFilteredJobs = jobs.slice().reverse().filter(
-        job=>matchesTitle(job) && matchesSearchLocation(job) && matchesJobType(job)
-       )
+     let rangeSalary = searchFilter.salary.split("-");
+     let minSalary = parseInt(rangeSalary[0]);
+     let maxSalary = parseInt(rangeSalary[1]);
+      
+     
+ 
+
+     const matchesSalary = (job) => {
+
+       console.log(job.minSalary);
+      //  let finalLpa = parseInt(numbers[0]) * 100000; 
+       if (
+         !isNaN(minSalary) &&
+         !isNaN(maxSalary) &&
+         job.minSalary >= minSalary &&
+         job.maxSalary <= maxSalary
+       ) {
+         return job;
+       }
+       else if(isNaN(minSalary)&& isNaN(maxSalary))
+       {
+        return job;
+       }
+     };
+
+       const newFilteredJobs = jobs
+         .slice()
+         .reverse()
+         .filter(
+           (job) =>
+             matchesTitle(job) &&
+             matchesSearchLocation(job) &&
+             matchesJobType(job) &&
+             matchesSalary(job)
+         );
        setFilteredJobs(newFilteredJobs)
     },[jobs,searchFilter])
 

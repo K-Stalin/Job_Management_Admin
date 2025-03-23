@@ -53,7 +53,7 @@ export const jobsData = [
     location: "onsite",
     level: "1-3 yr Exp",
     image: amazon,
-    salary: "12LPA",
+    salary: "3LPA",
     jobtype: "full-time",
     description: `
         <ol>
@@ -67,7 +67,7 @@ export const jobsData = [
     location: "onsite",
     level: "1-3 yr Exp",
     image: tesla,
-    salary: "12LPA",
+    salary: "8LPA",
     jobtype: "part-time",
     description: `
         <ol>
@@ -81,7 +81,7 @@ export const jobsData = [
     location: "chennai",
     level: "1-3 yr Exp",
     image: swigy,
-    salary: "12LPA",
+    salary: "6LPA",
     jobtype: "contract",
     description: `
         <ol>
@@ -109,7 +109,7 @@ export const jobsData = [
     location: "onsite",
     level: "1-3 yr Exp",
     image: amazon,
-    salary: "12LPA",
+    salary: "7LPA",
     jobtype: "part-time",
     description: `
         <ol>

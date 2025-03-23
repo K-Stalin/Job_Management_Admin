@@ -5,7 +5,7 @@ import { AppContext } from "../context/AppContext";
 const Hero = () => {
   
   
-  const { setSearchFilter } = useContext(AppContext);
+  const { setSearchFilter  } = useContext(AppContext);
 
   
   
@@ -33,8 +33,8 @@ const Hero = () => {
 
   const updateRangeProgress = () => {
     if (rangeRef.current) {
-      let minPercent = ((minValue - 10000) / (100000 - 10000)) * 100 + 5;
-      let maxPercent = ((maxValue - 10000) / (100000 - 10000)) * 100+3;
+      let minPercent = ((minValue - 10000) / (100000 - 10000)) * 100 +10;
+      let maxPercent = ((maxValue - 10000) / (100000 - 10000)) * 100+9;
       rangeRef.current.style.left = `${minPercent}%`;
       rangeRef.current.style.width = `${maxPercent - minPercent}%`;
     }
