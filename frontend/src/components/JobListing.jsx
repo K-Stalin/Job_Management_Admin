@@ -19,7 +19,11 @@ const JobListing = () => {
           
        const matchesSearchLocation = job =>searchFilter.location === "" ||  job.location.toLowerCase().includes(searchFilter.location.toLowerCase())
        
-       const matchesJobType = (job) => searchFilter.jobType === "" || job.jobtype.toLowerCase().includes(searchFilter.jobType.toLowerCase());
+       const matchesJobType = (job) =>
+         searchFilter.jobType === "" ||
+         job.jobcreateType
+           .toLowerCase()
+           .includes(searchFilter.jobType.toLowerCase());
 
      let rangeSalary = searchFilter.salary.split("-");
      let minSalary = parseInt(rangeSalary[0]);
@@ -30,7 +34,7 @@ const JobListing = () => {
 
      const matchesSalary = (job) => {
 
-       console.log(job.minSalary);
+       console.log(job);
       //  let finalLpa = parseInt(numbers[0]) * 100000; 
        if (
          !isNaN(minSalary) &&

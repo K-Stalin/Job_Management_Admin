@@ -25,7 +25,6 @@ const [jobs,setJobs ] = useState([])
 const [showCreateJob,setShowCreateJob] = useState(false)
 
 // function to fetchJob Data
-
 const fetchJobs = async ()=>{
   //  setJobs(jobsData)  
 }

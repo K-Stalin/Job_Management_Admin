@@ -34,7 +34,7 @@ function timeAgo(timestamp)
         <div>
           <img src={assests.amazon} width="105px" height="104px" alt="" />
         </div>
-        <span>{timeAgo(job.createdAt)}</span>
+        <span className='timeStamp'>{timeAgo(job.createdAt)}</span>
       </div>
       <h4 className="job-title">{job.title}</h4>
 
